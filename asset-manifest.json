@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hasmukh-LoginFlow/static/css/main.a4838356.css",
+    "main.js": "/hasmukh-LoginFlow/static/js/main.11af0d75.js",
+    "index.html": "/hasmukh-LoginFlow/index.html",
+    "main.a4838356.css.map": "/hasmukh-LoginFlow/static/css/main.a4838356.css.map",
+    "main.11af0d75.js.map": "/hasmukh-LoginFlow/static/js/main.11af0d75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4838356.css",
+    "static/js/main.11af0d75.js"
+  ]
+}

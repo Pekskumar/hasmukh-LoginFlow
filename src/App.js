@@ -1,25 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import SignIn from './pages/signIn';
+import SignUp from './pages/signUp';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from './pages/Layout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <ToastContainer />
+            <Router>
+                <Routes>
+                    <Route path="/" element={<SignUp />} />
+                    <Route path="/signIn" element={<SignIn />} />
+                    <Route path="*" element={<Layout />} />
+                </Routes>
+            </Router>
+        </>
+    );
 }
-
 export default App;
+// function App() {
+
+//     return ( <
+//         >
+//         <
+//             ToastContainer />
+//         <
+//         Router >
+//             <
+//         Routes >
+//                 <
+//                     Route path="*"
+//                     element={< SignUp />}
+//                 /> {/ * Add / * /} <
+//         Route path = "/signIn"
+//                 element = {< SignIn />}
+//         /> {/ * Add / * /} <
+//         Route path = "/*"
+//                 element = {< Layout />}
+//         /> <
+//         /Routes> <
+//         /Router> <
+//         />
+//                 );
+// }
+
+//                 export default App;
